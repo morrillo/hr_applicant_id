@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    <record model ="ir.ui.view" id="crm_case_form_view_id">
+        <field name="name">hr.applicant.id.form</field>
+        <field name="model">hr.applicant</field>
+        <field name="inherit_id" ref="hr_recruitment.crm_case_form_view_job"/>
+        <field name="arch" type="xml">
+		<field name="partner_name" position="after">
+			<group><field name="applicant_id" /></group>
+		</field>
+	</field>
+    </record>
+
+   </data>
+</openerp>
